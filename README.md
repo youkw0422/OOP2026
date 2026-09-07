@@ -1,6 +1,6 @@
 # OOP2026
 ### homework1
-"""java
+```java
 public class Homework1{
   public static void main(String []args){
     int i, j;
@@ -12,4 +12,4 @@ public class Homework1{
     }
   }
 }
-"""
+```
