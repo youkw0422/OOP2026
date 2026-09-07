@@ -1,9 +1,15 @@
 # OOP2026
 ### homework1
 '''java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("Hello, Honeymon");
+public class Homework1{
+  public static void main(String []args){
+    int i, j;
+    for(i=0; i<10; i++) {
+      for(j=0; j<10; j++) {
+        System.out.print("#");
+      }
+      System.out.println("");
+    }
   }
 }
 '''
