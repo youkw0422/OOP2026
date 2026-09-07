@@ -45,7 +45,9 @@ public class Homework1 {
     }
 }
 ```
-public class homework {
+### Homwork2
+```java
+public class Homwork2 {
     public static void main(String[] args) {
         int n = 20;
         int[] fibo = new int[n];
