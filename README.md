@@ -45,6 +45,7 @@ public class Homework1 {
     }
 }
 ```
+![Alt homework11](./images/homework1.jpg)
 ### Homwork2
 ```java
 public class Homework2 {
@@ -67,6 +68,7 @@ public class Homework2 {
     }
 }
 ```
+![Alt homework11](./images/homework2.jpg)
 ### Homework3
 ```java
 public class Homework3 {
@@ -88,6 +90,7 @@ public class Homework3 {
     }
 }
 ```
+![Alt homework11](./images/homework3.jpg)
 ### Homework4
 ```java
 public class homework4 {
@@ -102,3 +105,4 @@ public class homework4 {
     }
 }
 ```
+![Alt homework11](./images/homework4.jpg)
