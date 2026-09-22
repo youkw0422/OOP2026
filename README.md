@@ -164,3 +164,16 @@ public class homework4 {
 		
 	}
 ```
+```java
+public class hw6 {
+	public static void main(String[] args) {
+		int i, n = 100, sign = 1;
+		double sum = 0;
+		for(i=0;i<n;i++) {
+			sum += sign*4./(2.*i+1.);
+			sign*= -1;
+		}
+		System.out.println(sum);
+		}
+	}
+```
