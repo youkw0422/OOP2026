@@ -176,6 +176,38 @@ public class homework7 {
 }
 ```
 ![Alt homework11](./images/homework7.jpg)
+### Homework8
+```Java
+public class homework8 {
+    public static void main(String[] args) {
+        int studentCount = 30; 
+        int score[][] = new int[studentCount][5]; 
+
+        for (int i = 0; i < studentCount; i++) {
+            for (int j = 0; j < 4; j++) {
+                score[i][j] = (int)(Math.random() * 101);
+            }
+        }
+
+        System.out.println("번호\t국어\t영어\t수학\t과학\tsum");
+        System.out.println("----------------------------------------");
+
+        for (int i = 0; i < studentCount; i++) {
+            int sum = 0;
+            System.out.print((i + 1) + "\t");
+
+            for (int j = 0; j < 4; j++) {
+                System.out.print(score[i][j] + "\t");
+                sum += score[i][j];
+            }
+            
+            System.out.println(sum);
+        }
+    }
+}
+
+```
+![Alt homework11](./images/homework8.jpg)
 
 ```java
 	public static void main(String[] args) {
