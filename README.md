@@ -120,6 +120,33 @@ public class homework5 {
 	}
 ```
 ![Alt homework11](./images/homework5.jpg)
+### Homework6
+```Java
+public class homework6 {
+    public static void main(String[] args) {
+        int n = 7;
+        int[][] binomial = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    binomial[i][j] = 1;
+                } else {
+                    binomial[i][j] = binomial[i - 1][j - 1] + binomial[i - 1][j];
+                }
+            }
+        }
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(binomial[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+![Alt homework11](./images/homework6.jpg)
 
 ```java
 	public static void main(String[] args) {
