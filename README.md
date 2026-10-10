@@ -147,6 +147,35 @@ public class homework6 {
 }
 ```
 ![Alt homework11](./images/homework6.jpg)
+### Homework7
+```Java
+public class homework7 {
+    public static void main(String[] args) {
+        int data[] = new int[20];
+        
+        for (int i = 0; i < 20; i++) {
+            data[i] = (int)(Math.random() * 100);
+        }
+        
+        for (int i = 0; i < data.length - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[j] < data[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            int temp = data[i];
+            data[i] = data[minIndex];
+            data[minIndex] = temp;
+        }
+
+        for (int i = 0; i < 20; i++) {
+            System.out.println(data[i]);
+        }
+    }
+}
+```
+![Alt homework11](./images/homework7.jpg)
 
 ```java
 	public static void main(String[] args) {
