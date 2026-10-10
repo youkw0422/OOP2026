@@ -105,35 +105,18 @@ public class homework4 {
 }
 ```
 ![Alt homework11](./images/homework4.jpg)
+### Homework5
 ```java
-	public static void Histogram(String[] args) {
-		// TODO Auto-generated method stub
-		int array_count, max_value, bin_size, display_scale, hist_size;
-		if(args.length !=4)
-			return;
-		array_count = Integer.parseInt(args[0]);
-		max_value = Integer.parseInt(args[1]);
-		bin_size = Integer.parseInt(args[2]);
-		display_scale = Integer.parseInt(args[3]);
-		hist_size = max_value/bin_size;
-		
-		int[] arr = new int[array_count];
-		int[] hist = new int[hist_size];
-		for (int i=0; i<array_count; i++) {
-			arr[i] = (int) (Math.random()*max_value);
+public class homework5 {
+	public static void main(String[] args) {
+		int i, n = 100, sign = 1;
+		double sum = 0;
+		for(i=0;i<n;i++) {
+			sum += sign*1./((2.*i+1)*Math.pow(3., i));
+			sign*= -1;
 		}
-		for (int i=0; i<array_count; i++) {
-			System.out.print(arr[i] + " ");  
+		System.out.println(sum*Math.sqrt(12));
 		}
-		System.out.println();  
-		
-		for (int i=0; i<array_count; i++) {
-			hist[arr[i]/bin_size]++;
-		}
-		for (int i=0; i<hist_size; i++) {
-			System.out.print(hist[i] + " ");  
-		}
-		System.out.println();  
 	}
 ```
 ```java
