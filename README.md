@@ -243,7 +243,36 @@ public class homework10 {
 	}
 ```
 ![Alt homework11](./images/homework10.jpg)
-
+### Homework11
+```Java
+public class hw6 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int array_count;
+		if(args.length !=1)
+			return;
+		array_count = Integer.parseInt(args[0]);
+		int[] arr = new int[array_count];
+		for (int i=0; i<array_count; i++) {
+			arr[i] = (int) (Math.random()*100);
+		}
+		for (int i=0; i<array_count; i++) {
+			System.out.print(arr[i] + " ");  
+		}
+		System.out.println();
+		double sum = 0;
+		for (int i=0; i<array_count; i++) {
+			sum+=arr[i];
+		}
+		System.out.printf("arithematic mean : = %f\n", sum/array_count);
+		double prod = 1;
+		for (int i=0; i<array_count; i++) {
+			prod*=arr[i];
+		}
+		System.out.printf("harmonic mean : = %f\n", Math.pow(prod, (double)1./array_count));
+		}
+	}
+```
 ```java
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -272,6 +301,8 @@ public class homework10 {
 		
 	}
 ```
+![Alt homework11](./images/homework11.jpg)
+
 ```java
 public class hw6 {
 	public static void main(String[] args) {
