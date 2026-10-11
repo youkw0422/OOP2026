@@ -208,6 +208,41 @@ public class homework8 {
 
 ```
 ![Alt homework11](./images/homework8.jpg)
+### Homework10
+```Java
+public class homework10 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int array_count, max_value, bin_size, display_scale, hist_size;
+		if(args.length !=4)
+			return;
+		array_count = Integer.parseInt(args[0]);
+		max_value = Integer.parseInt(args[1]);
+		bin_size = Integer.parseInt(args[2]);
+		display_scale = Integer.parseInt(args[3]);
+		hist_size = max_value/bin_size;
+		
+		int[] arr = new int[array_count];
+		int[] hist = new int[hist_size];
+		for (int i=0; i<array_count; i++) {
+			arr[i] = (int) (Math.random()*max_value);
+		}
+		for (int i=0; i<array_count; i++) {
+			System.out.print(arr[i] + " ");  
+		}
+		System.out.println();  
+		
+		for (int i=0; i<array_count; i++) {
+			hist[arr[i]/bin_size]++;
+		}
+		for (int i=0; i<hist_size; i++) {
+			System.out.print(hist[i] + " ");  
+		}
+		System.out.println();  
+		}
+	}
+```
+![Alt homework11](./images/homework10.jpg)
 
 ```java
 	public static void main(String[] args) {
