@@ -276,38 +276,24 @@ public class hw6 {
 ![Alt homework11](./images/homework11.jpg)
 ### Homework13
 ```Java
+import java.util.Scanner;
+
 public class homework13 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+  public static void main(String[] args) {
+    while(true) {
+      Scanner scanner = new Scanner(System.in);
+      String inputString = scanner.nextLine();
+      System.out.println(inputString);
+      String[] arrOfStr = inputString.split(" "); 
+      for (String a : arrOfStr) 
+        System.out.println(a); 
         
-        while (true) {
-            String input = scanner.nextLine().trim();
-            if (input.equalsIgnoreCase("exit")) break;
-            
-            String[] tokens = input.split("\\s+");
-            double result = Double.parseDouble(tokens[0]);
-            
-            for (int i = 1; i < tokens.length; i += 2) {
-                String op = tokens[i];
-                double val = Double.parseDouble(tokens[i + 1]);
-                
-                switch (op) {
-                    case "+": result += val; break;
-                    case "-": result -= val; break;
-                    case "*": result *= val; break;
-                    case "/": result /= val; break;
-                    case "#": result = (result + val) / 2.0; break;
-                }
-            }
-            
-            if (result == (long) result) {
-                System.out.println((long) result);
-            } else {
-                System.out.println(result);
-            }
-        }
-        scanner.close();
-    }
+      if(arrOfStr[1].equals("+")) {
+        int result = Integer.parseInt(arrOfStr[0]) + Integer.parseInt(arrOfStr[2]);
+        System.out.println(result);
+      }
+    }    
+  }
 }
 ```
 ![Alt homework11](./images/homework13.jpg)
